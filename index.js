@@ -38,7 +38,8 @@ document.querySelector(".search-bar").addEventListener("keyup", function(e){
     
 })
 document.getElementById("contact").addEventListener("click",function(e){
-    alert("You will be redirected to whatsApp")
+   alert("You will be redirected to whatsApp");
+
 })
 
 weather.fetchWeather("Nairobi");
