@@ -13,7 +13,7 @@ let weather = {
         const {speed}=data.wind;
         // console.log(name, icon, description, temp, humidity, speed)
         document.querySelector(".city").innerText = "Weather in " + name;
-        document.querySelector(".icon").src="https://openweathermap.org/img/wn/" + icon + "@2x.png";
+        (".icon").src="https://openweathermap.org/img/wn/" + icon + "@2x.png";
         document.querySelector(".description").innerText = description;
         document.querySelector(".temp").innerText= temp + "°C";
         document.querySelector(".humidity").innerText="Humidity "+ humidity + "%";
@@ -34,7 +34,11 @@ document.querySelector(".search button").addEventListener("click", function(){
 document.querySelector(".search-bar").addEventListener("keyup", function(e){
     if(e.key==="Enter"){
         weather.search();
-    }
+    }  
+    
+})
+document.getElementById("contact").addEventListener("click",function(e){
+    alert("You will be redirected to whatsApp")
 })
 
 weather.fetchWeather("Nairobi");
